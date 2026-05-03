@@ -1,0 +1,49 @@
+## EREMIS Database Configuration Template
+## Copy this file to db.properties and fill in your values.
+## NEVER commit db.properties (with real credentials) to version control.
+##
+## Environment variable overrides (production):
+##   EREMIS_DB_URL        → db.url
+##   EREMIS_DB_USERNAME   → db.username
+##   EREMIS_DB_PASSWORD   → db.password
+##   EREMIS_MAIL_ENABLED  → mail.enabled
+##   EREMIS_MAIL_HOST     → mail.host
+##   EREMIS_MAIL_PORT     → mail.port
+##   EREMIS_MAIL_USERNAME → mail.username
+##   EREMIS_MAIL_PASSWORD → mail.password
+##   EREMIS_MAIL_FROM_NAME→ mail.fromName
+##   EREMIS_MAIL_SSL      → mail.ssl
+##   EREMIS_MAIL_STARTTLS → mail.startTls
+##   EREMIS_REQUIRE_REGISTRATION_OTP → app.registration.requireEmailOtp
+
+db.url=jdbc:mysql://localhost:3306/eremis_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+db.username=root
+db.password=
+db.driver=com.mysql.cj.jdbc.Driver
+
+## Connection pool settings
+db.pool.maxConnections=10
+db.pool.timeout=5000
+
+## Application settings
+app.name=EREMIS
+app.version=1.0.0
+app.theme=LIGHT
+app.login.maxAttempts=3
+app.login.lockoutMinutes=15
+app.passwordReset.otpMinutes=10
+app.registration.requireEmailOtp=true
+
+## Payment encryption key (use a strong random string in production)
+app.payment.encryptionKey=CHANGE-THIS-TO-A-STRONG-RANDOM-KEY-64-CHARS
+
+## Mail (SMTP) settings — uncomment and update to enable OTP emails
+#mail.enabled=true
+#mail.host=smtp.gmail.com
+#mail.port=465
+#mail.ssl=true
+#mail.startTls=false
+#mail.timeoutMillis=15000
+#mail.username=your.email@gmail.com
+#mail.password=YOUR_GMAIL_APP_PASSWORD
+#mail.fromName=EREMIS

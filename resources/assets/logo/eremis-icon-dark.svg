@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">EREMIS Icon Dark Variant</title>
+  <desc id="desc">Dark background icon-only EREMIS monogram.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#061427"/>
+      <stop offset="1" stop-color="#0B1F3B"/>
+    </linearGradient>
+    <linearGradient id="navyDepth" x1="120" y1="70" x2="430" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24507E"/>
+      <stop offset="0.52" stop-color="#102B4D"/>
+      <stop offset="1" stop-color="#07182D"/>
+    </linearGradient>
+    <linearGradient id="goldDepth" x1="80" y1="60" x2="330" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6D982"/>
+      <stop offset="0.45" stop-color="#C8A24A"/>
+      <stop offset="1" stop-color="#9C7425"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <path d="M286 54C181 59 101 143 101 248c0 45 15 87 41 120"
+        fill="none" stroke="url(#goldDepth)" stroke-width="25" stroke-linecap="round"/>
+  <path d="M151 369V262l39-39v146z" fill="url(#navyDepth)"/>
+  <path d="M206 369V189l50-50v230z" fill="url(#navyDepth)"/>
+  <path d="M268 369V244l40-40v165z" fill="url(#goldDepth)"/>
+  <path d="M313 369V283l34-34v120z" fill="url(#goldDepth)"/>
+  <path d="M282 126h166v66h-95v62h80c17 0 32-4 44-13v70c-12-9-27-13-44-13h-80v66h104c24 0 45-7 63-21l-15 70H282V203l-45-36z"
+        fill="url(#navyDepth)"/>
+  <path d="M103 397c82-21 238-21 321 0-91 13-230 13-321 0z" fill="#061427"/>
+  <path d="M129 382c74-11 197-11 271 0" fill="none" stroke="url(#goldDepth)" stroke-width="8" stroke-linecap="round"/>
+</svg>

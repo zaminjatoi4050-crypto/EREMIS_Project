@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+dist/*.jar
+*.class
+
+# IDE files
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+
+# Sensitive configuration — NEVER commit real credentials
+resources/db.properties
+
+# Compilation lists (generated files)
+sources.txt
+sources_list.txt
+
+# OS
+.DS_Store
+Thumbs.db
