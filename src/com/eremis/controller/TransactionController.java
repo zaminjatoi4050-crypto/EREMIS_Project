@@ -17,6 +17,10 @@ public class TransactionController {
         return transactionService.getPendingTransactions();
     }
 
+    public List<Transaction> getAllTransactions() {
+        return transactionService.getAllTransactions();
+    }
+
     public List<Transaction> getMyTransactions(int buyerId) {
         return transactionService.getMyTransactions(buyerId);
     }

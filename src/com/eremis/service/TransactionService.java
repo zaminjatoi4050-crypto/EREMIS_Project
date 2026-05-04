@@ -116,6 +116,14 @@ public class TransactionService {
         }
     }
 
+    public List<Transaction> getAllTransactions() {
+        try (Connection conn = db.getConnection()) {
+            return transactionDAO.findAll(conn);
+        } catch (SQLException e) {
+            throw new RuntimeException("Unable to load transactions.", e);
+        }
+    }
+
     public List<Transaction> getMyTransactions(int buyerId) {
         try (Connection conn = db.getConnection()) {
             return transactionDAO.findByBuyerId(conn, buyerId);

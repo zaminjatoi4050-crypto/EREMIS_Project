@@ -160,7 +160,7 @@ public class TransactionAdminPanel extends JPanel {
     private void loadData() {
         SwingWorker<List<Transaction>, Void> worker = new SwingWorker<>() {
             @Override protected List<Transaction> doInBackground() {
-                return controller.getPendingTransactions();
+                return controller.getAllTransactions();
             }
 
             @Override protected void done() {
